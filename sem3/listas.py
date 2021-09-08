@@ -1,6 +1,6 @@
 """
 Primer interpretación de colecciones de datos.
-Creación de una lista vacío y agregado de items con método append() en base a ingreso desde consola.
+Creación de una lista vacía y agregado de items con método append() en base a ingreso desde consola.
 A medida que se obtienen los items, se cotejan contra una referencia para detectar cuál es el mayor.
 """
 
