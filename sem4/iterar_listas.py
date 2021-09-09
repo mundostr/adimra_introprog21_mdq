@@ -31,3 +31,11 @@ print("listaEnteros2:", listaEnteros2) # listaEnteros2 será igual a listaEntero
 listaEnteros3 = listaEnteros[0:4].copy()
 print()
 print("listaEnteros3:", listaEnteros3) # listaEnteros3 contendrá solo los 4 primeros items de listaEnteros
+
+listaEnteros4 = listaEnteros[:4].copy()
+print()
+print("listaEnteros4:", listaEnteros4) # Si omitimos el primer parámetro, comenzará desde el primer item
+
+listaEnteros5 = listaEnteros[5:].copy()
+print()
+print("listaEnteros5:", listaEnteros5) # Si omitimos el segundo parámetro, irá desde allí hasta el final
