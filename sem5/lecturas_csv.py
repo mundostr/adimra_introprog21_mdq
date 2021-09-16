@@ -25,12 +25,15 @@ CIUDAD = "Balcarce"
 		
 # archivo.close()
 
-archivo = csv.reader(open(RUTA, "r", encoding="utf8"))
+contenido = csv.reader(open(RUTA, "r", encoding="utf8"))
 
-for registro in archivo:
+for registro in contenido:
 	if (CIUDAD in registro):
 		datos = registro
+
+print(type(datos))
 
 print("Ciudad:", CIUDAD)
 print("Latitud:", datos[2])
 print("Longitud:", datos[3])
+print("Población:", datos[9])
