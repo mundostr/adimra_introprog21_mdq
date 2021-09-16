@@ -10,7 +10,7 @@ Iteramos la lista (contenido) en busca de una ciudad determinada, para mostrar s
 import csv
 
 
-RUTA = "practicas/ciudades_del_mundo.csv"
+RUTA = "sem5/ciudades_del_mundo.csv"
 CIUDAD = "Balcarce"
 
 
