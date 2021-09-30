@@ -6,3 +6,4 @@ logs
 .vscode/
 *.sw*
 practicas/
+/sem7/.env
