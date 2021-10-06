@@ -32,7 +32,13 @@ def main():
 	if (enlaceBd == False):
 		print("Problemas al conectar con la bbdd")
 	else:
-		resultado = solicitarRegistros(enlaceBd, "SELECT piloto, puntos FROM clasificacion_f1 ORDER BY puntos DESC LIMIT 0, 3")
+		sql = """
+		SELECT clasificacion_f1.piloto, escuderias_f1.nombre, clasificacion_f1.puntos
+		FROM clasificacion_f1, escuderias_f1
+		WHERE clasificacion_f1.id_escuderia = escuderias_f1.id
+		ORDER BY puntos DESC
+		"""
+		resultado = solicitarRegistros(enlaceBd, sql)
 		for item in resultado:
 			print(item)
 
