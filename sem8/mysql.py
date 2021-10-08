@@ -50,8 +50,8 @@ def main():
 		FROM clasificacion_f1, escuderias_f1
 		WHERE clasificacion_f1.id_escuderia = escuderias_f1.id
 		ORDER BY puntos DESC"""
-		
 		resultado = consultar(enlaceBd, sql)
+		
 		if not (resultado):
 			print("Error al realizar la consulta")
 		else:
